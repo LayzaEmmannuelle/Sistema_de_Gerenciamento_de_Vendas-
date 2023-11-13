@@ -7,15 +7,26 @@
 Esta aplicação foi desenvolvida seguindo o padrão MVC em Java, utilizando o framework Spring Boot. O projeto possui uma estrutura de CRUD que possibilita as operações de cadastro, edição, salvamento e exclusão para as classes cliente, vendedor, produto, venda e item de venda, no qual os dados estão sendo persistidos em um banco de dados MySQL.
 
 ## Banco de Dados Lógico
-![Mobile 1](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/banco%20l%C3%B3gico.png) 
 
-## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
+![](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/banco%20l%C3%B3gico.png) 
 
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
+## Tabelas do Banco de dados MySQL
+![Cliente](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/Captura%20de%20tela%202023-11-13%20185617.png)
 
-## Diagrama de Classe
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+
+![Vendedor](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/Captura%20de%20tela%202023-11-13%20185650.png)
+
+
+![Produto](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/Captura%20de%20tela%202023-11-13%20185705.png)
+
+
+![Venda](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/Captura%20de%20tela%202023-11-13%20185725.png)
+
+
+![ItemDaVenda](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/Captura%20de%20tela%202023-11-13%20185738.png)
+
+
+
 
 # Tecnologias utilizadas
 ## Back end
