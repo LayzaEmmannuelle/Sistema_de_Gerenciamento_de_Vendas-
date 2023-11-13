@@ -6,6 +6,15 @@
 
 Esta aplicação foi desenvolvida seguindo o padrão MVC em Java, utilizando o framework Spring Boot. O projeto possui uma estrutura de CRUD que possibilita as operações de cadastro, edição, salvamento e exclusão para as entidades cliente, vendedor, produto, venda e item de venda, no qual os dados estão sendo persistidos em um banco de dados MySQL.
 
+# Tecnologias utilizadas
+## Back end
+- Java
+- Spring Boot
+- Swagger
+- Banco de dados H2
+- MySQL
+- Postman
+  
 ## Banco de Dados Lógico
 
 ![](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/banco%20l%C3%B3gico.png) 
@@ -24,19 +33,6 @@ Esta aplicação foi desenvolvida seguindo o padrão MVC em Java, utilizando o f
 
 
 ![ItemDaVenda](https://github.com/LayzaEmmannuelle/Sistema_de_Gerenciamento_de_Vendas-/blob/main/assets/Captura%20de%20tela%202023-11-13%20185738.png)
-
-
-
-
-# Tecnologias utilizadas
-## Back end
-- Java
-- Spring Boot
-- Swagger
-- Banco de dados H2
-- MySQL
-- Postman
-
 
 # Autores
 
