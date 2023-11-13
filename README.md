@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-Esta aplicação foi desenvolvida seguindo o padrão MVC em Java, utilizando o framework Spring Boot. O projeto possui uma estrutura de CRUD que possibilita as operações de cadastro, edição, salvamento e exclusão para as classes cliente, vendedor, produto, venda e item de venda, no qual os dados estão sendo persistidos em um banco de dados MySQL.
+Esta aplicação foi desenvolvida seguindo o padrão MVC em Java, utilizando o framework Spring Boot. O projeto possui uma estrutura de CRUD que possibilita as operações de cadastro, edição, salvamento e exclusão para as entidades cliente, vendedor, produto, venda e item de venda, no qual os dados estão sendo persistidos em um banco de dados MySQL.
 
 ## Banco de Dados Lógico
 
