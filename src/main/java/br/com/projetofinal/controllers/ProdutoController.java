@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.projetofinal.entity.Produto;
 import br.com.projetofinal.service.ProdutoService;
+import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
 @RequestMapping(value="/produto")
@@ -26,30 +27,41 @@ public class ProdutoController {
 	private ProdutoService service;
 
 	
-	
+	@Operation(
+			summary ="Lista de Produtos ",
+			description = "Esse método retorna uma lista de produtos")
 	@GetMapping
 	public ResponseEntity<List<Produto>> buscarProduto(){
 		List<Produto>listadeProduto = service.buscarProduto();
 		return ResponseEntity.status(HttpStatus.OK).body(listadeProduto);
 	}
+	@Operation(
+			summary ="Lista de Produtos pelo ID ",
+			description = "Esse método busca o produtos pelo ID")
 	@GetMapping(value ="/{id}")
 	public ResponseEntity<Produto> procuraPorId(@PathVariable Integer id) {
 		Produto response = service.procuraPorId(id);
 		return ResponseEntity.status(HttpStatus.OK).body(response);
 	}
-	
+	@Operation(
+			summary ="Cadastrar Produtos ",
+			description = "Esse método cadastra produtos")
 	@PostMapping
 	public ResponseEntity<String> cadastrarProduto(@RequestBody Produto produto) {
 		String response = service.cadastrarProduto(produto);
 		return ResponseEntity.status(HttpStatus.CREATED).body(response);
 	}
-	
+	@Operation(
+			summary ="Alterar Produtos ",
+			description = "Esse método altera o produto")
 	@PutMapping(value= "/{idProduto}")
 	public ResponseEntity<String> alterarProduto(@PathVariable Integer idProduto, @RequestBody Produto produto) {
 	String response = service.alterarProduto(idProduto, produto);
 	return ResponseEntity.status(200).body(response);
 	}
-	
+	@Operation(
+			summary ="Deletar Produtos ",
+			description = "Esse método deleta o produto")
 	@DeleteMapping(value="/{idProduto}")
 	public ResponseEntity<Void> excluiProduto(@PathVariable Integer idProduto) {
 	service.excluirProduto(idProduto);

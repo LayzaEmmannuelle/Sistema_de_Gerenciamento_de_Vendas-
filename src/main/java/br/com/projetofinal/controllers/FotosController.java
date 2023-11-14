@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import br.com.projetofinal.storage.Disco;
+import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
 @RequestMapping("/fotos")
@@ -16,6 +17,9 @@ public class FotosController {
 	@Autowired
 	private Disco disco;
 	
+	@Operation(
+			summary ="Salvar Foto",
+			description = "Esse método salva fotos")
 	@PostMapping
 	public void upload(@RequestParam MultipartFile foto) {
 		disco.salvarFoto(foto);
